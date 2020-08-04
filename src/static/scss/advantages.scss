@@ -1,0 +1,43 @@
+.advantages{
+  background-color: #1B1B1B;
+  color: #fff;
+  &__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+  }
+  &__item{
+    width: calc((100% - 60px) / 3);
+    position: relative;  
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &::after{
+      content: '';
+      display: block;
+      width: 1px;
+      height: 64px;
+      background-color: #50555C;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -32px;
+    }
+    &:last-child{
+      &::after{display: none;}
+    }
+  }
+  &__icn{
+    width: 80px;
+    margin-right: 16px;
+    opacity: .5;
+  }
+  &__txt{
+    font-size: 18px;
+    line-height: 28px;
+  }
+  @media only screen and (max-width : 1023px){
+    display: none;
+  }
+}

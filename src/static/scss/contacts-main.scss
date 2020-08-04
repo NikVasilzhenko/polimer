@@ -1,0 +1,90 @@
+.contacts-main{
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,.1);
+  &__map{
+    width: 736px;
+    max-width: calc(100% - 320px);
+  }
+  &__content{
+    width: calc(100% - 736px);
+    min-width: 320px;
+    padding: 56px 40px 64px 48px;
+    .sec-title{margin-bottom: 24px;}
+    .contacts-main-item{margin-bottom: 16px;}
+  }
+  .soc{margin-top: 30px;}
+  @media only screen and (max-width : 767px){
+    display: block;
+    &__map{
+      width: 100%;
+      max-width: unset;
+      height: 440px;
+    }
+    &__content{
+      width: 100%;
+      min-width: unset;
+      padding: 32px 16px 40px;
+      .sec-title{margin-bottom: 19px;}
+    }
+    .soc{margin-top: 23px;}
+  }
+}
+.contacts-main-item{
+  &__header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #9C9C9C;
+  }
+  &__icn{
+    width: 40px;
+    svg{fill: #9C9C9C;}
+  }
+  &__main{
+    color: #1B1B1B;
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 40px;
+    &[href]:hover{color: #FF2B03;}
+  }
+  @media only screen and (max-width : 767px){
+    &__header{font-size: 12px;}
+    &__icn{width: 37px;}
+    &__main{
+      font-size: 16px;
+      margin-left: 37px;
+    }
+  }
+}
+.soc{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 8px;
+    transition: none;
+    svg{fill: #fff;}
+    &[href^="tg"]{background-color: #2FB1F4;}
+    &[href^="whatsapp"]{background-color: #4CC85B;}
+    &[href^="viber"]{background-color: #854ba5;}
+    &[href^="https://www.instagram.com"]{
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    }
+    &:hover{background: #FF2B03;}
+  }
+}

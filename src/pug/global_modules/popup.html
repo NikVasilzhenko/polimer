@@ -1,1 +1,29 @@
-div.popup POPUP
+<div class="popup js-popup" id="js-order-popup">
+  <div class="popup__overlay js-popup-close"></div>
+  <div class="popup__main">
+    <button class="btn popup__close js-popup-close">Закрыть</button>
+    <h2 class="popup__title">Укажите контакты и нажмите кнопку. Перезвоним в течении 30 мин.</h2>
+    <form action="#" method="post" class="popup__form">
+      <label class="label error">
+        <span class="label__title">Ваше имя</span>
+        <input type="text" name="name" class="input js-input">
+        <span class="label__icn"><img src="src/static/img/svg/input-user.svg" alt=""></span>
+        <span class="label__error">Ошибка. Неверный формат</span>
+      </label>
+      <label class="label">
+        <span class="label__title">Телефон</span>
+        <input type="tel" name="name" class="input js-input">
+        <span class="label__icn"><img src="src/static/img/svg/input-tel.svg" alt=""></span>
+      </label>
+      <label class="label">
+        <span class="label__title">E-mail</span>
+        <input type="email" name="name" class="input js-input">
+        <span class="label__icn"><img src="src/static/img/svg/input-email.svg" alt=""></span>
+      </label>
+      <button class="btn btn_l btn_red popup__submit" type="submit">Записаться на покраску</button>
+      <small class="popup__small">
+        Нажимая «Записаться на покраску» я соглашаюсь с&nbsp;<a href="#" target="_blank">условиями обработки персональных данных</a>
+      </small>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+.price{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 32px;
+  &__btn{
+    width: 343px;
+    min-width: 343px;
+  }
+  &__all{
+    color: #3F5EE0;
+    font-weight: 500;
+    white-space: nowrap;
+    svg{
+      fill: #3F5EE0;
+      position: relative;
+      top: -2px;
+    }
+    &:hover{
+      color: #FF2B03;
+      svg{fill: #FF2B03;}
+    }
+  }
+  &__txt{
+    flex-grow: 1;
+    padding: 0 32px;
+    line-height: 25px;
+    span{color: #FF2B03;}
+  }
+  @media only screen and (max-width : 991px){
+    flex-wrap: wrap;
+    &__txt{
+      order: 2;
+      width: 100%;
+      padding: 0;
+      margin-top: 24px;
+    }
+  }
+  @media only screen and (max-width : 767px){
+    display: block;
+    &__btn{
+      width: 100%;
+      min-width: unset;
+    }
+    &__txt{
+      margin-bottom: 26px;
+      font-size: 14px;
+      line-height: 22px;
+      br{display: none;}
+    }
+  }
+}

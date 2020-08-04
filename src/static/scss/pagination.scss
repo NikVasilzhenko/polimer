@@ -1,0 +1,42 @@
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__boolets,
+  &__arrows{
+    border: 1px solid #CECECE;
+    border-radius: 4px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    span,a{
+      display: block;
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+      text-align: center;
+      border-right: 1px solid #CECECE;
+      color: #1B1B1B;
+      &:last-child{border-right: none;}
+      svg{fill: #1B1B1B;}
+    }
+    a{
+      &.active,
+      &:hover{
+        color: #FF2B03;
+        svg{fill: #FF2B03;}
+      }
+    }
+  }
+  &__counter{display: none;}
+  @media only screen and (max-width : 767px){
+    &__boolets{display: none;}
+    &__counter{
+      display: block;
+      span{
+        font-weight: 500;
+        color: #FF2B03;
+      }
+    }
+  }
+}

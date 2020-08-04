@@ -1,0 +1,92 @@
+.managers{
+  .manager{margin: 0 15px;}
+  @media only screen and (max-width : 767px){
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    padding: 0 80px 48px 0;
+    padding-right: calc(100% - 206px);
+    .manager{margin: 0 16px;}
+    .slick-list{overflow: visible;}
+  }  
+}
+.manager{
+  &__photo{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 152px;
+    height: 152px;
+  }
+  &__main{padding: 32px 0 0 24px;}
+  &__name{
+    font-size: 22px;
+    font-weight: 500;
+    color: #1B1B1B;
+    margin-bottom: 8px;
+  }
+  &__address{
+    color: #9C9C9C;
+    margin-bottom: 24px;
+  }
+  &__status{
+    color: #9C9C9C;
+    margin-bottom: 8px;
+  }
+  &__row{
+    margin-bottom: 8px;
+    a{
+      color: #1B1B1B;
+      font-size: 16px;
+      white-space: nowrap;
+    }
+  }
+  &__time{
+    font-size: 14px;
+    color: #9C9C9C;
+    white-space: nowrap;
+  }
+  &__mail{
+    color: #3F5EE0;
+    &:hover{color: #FF2B03;}
+  }
+  &__soc{
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      margin-right: 16px;
+      svg{fill: #fff;}
+      &[href^="tg"]{background-color: #2FB1F4;}
+      &[href^="whatsapp"]{background-color: #4CC85B;}
+      &:hover{background-color: #FF2B03;}
+    }
+  }
+  @media only screen and (max-width : 767px){
+    &__photo{
+      width: 128px;
+      height: 128px;
+    }
+    &__main{padding: 16px 0 0 16px;}
+    &__name{font-size: 18px;}
+    &__address{
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+    &__row{
+      margin-bottom: 8px;
+      a{font-size: 14px;}
+    }
+    &__time{font-size: 12px;}
+    &__mail{font-size: 14px;}
+    &__soc{
+      margin-top: 20px;
+      a{margin-right: 8px;}
+    }
+  }
+}

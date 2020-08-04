@@ -1,0 +1,14 @@
+.articles-slider{
+  .articles-item{margin: 15px;}
+  @media only screen and (max-width : 767px){
+    width: calc(100% + 8px);
+    margin-left: -4px;
+    padding: 0 80px 32px 0;
+    padding-right: calc(100% - 266px);
+    .slick-list{overflow: visible;}
+    .articles-item{margin: 16px 4px;}
+    .slick-prev{left: 4px;}
+    .slick-next{right: 4px;}
+    .slick-current {transform: translateY(-16px);}
+  }
+}

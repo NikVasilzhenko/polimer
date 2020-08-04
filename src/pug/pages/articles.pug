@@ -1,0 +1,16 @@
+extends ../layout/layout_page
+
+block main
+  nav.breadcrumbs
+    .container
+      a(href="/") Главная 
+      | – Статьи
+  include ../modules/articles.html
+  include ../modules/advantages.html
+  include ../modules/reviews-slider.html
+  include ../modules/howwework.html
+  include ../modules/seo.html
+  include ../modules/managers.html
+  include ../modules/contacts.html
+  include ../modules/map.html
+  include ../global_modules/popup.html

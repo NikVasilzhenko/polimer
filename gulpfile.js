@@ -16,7 +16,10 @@ var gulp = require('gulp'), // сам gulp
     pug = require('gulp-pug'), // компилятор pug
     iconfont = require('gulp-iconfont'),
     iconfontCss = require('gulp-iconfont-css-with-types'),
-    fontName = 'iconfont';
+    fontName = 'iconfont',
+    svgmin = require('gulp-svgmin'),
+    cheerio = require('gulp-cheerio'),
+    svgInject = require('gulp-svg-inject');
 
 /*таски*/
 
@@ -27,6 +30,21 @@ gulp.task('serve', function(){
 	 baseDir: './build'
     }
   });
+});
+
+//svgclin
+gulp.task('svgclin', function () {
+    return gulp.src('src/static/icons/*.svg')
+        .pipe(svgmin())
+        .pipe(cheerio({
+          run: function ($) {
+              $('[fill]').removeAttr('fill');
+              $('[style]').removeAttr('style');
+              $('[class]').removeAttr('class');
+          },
+          parserOptions: { xmlMode: true }
+        }))
+        .pipe(gulp.dest('src/static/img/svg/'));
 });
 
 //таск pug
@@ -43,6 +61,7 @@ gulp.task('pug', function(){
     .pipe(pug({
       pretty: true //опция делает скомпилированый код с отступами а не в одну строку
     }))
+    .pipe(svgInject())
     .pipe(gulp.dest('build')) //директория куда складывать скомпилированые файлы
     .on('end', browserSync.reload);
 });
@@ -76,7 +95,10 @@ gulp.task('vendors', function(){
   return gulp.src([
     'node_modules/jquery/dist/jquery.min.js',
     'node_modules/slick-carousel/slick/slick.min.js',
-    'node_modules/jquery-form-styler/dist/jquery.formstyler.min.js'
+    'node_modules/jquery-form-styler/dist/jquery.formstyler.min.js',
+    'src/static/js/jquery.fancybox.js',
+    'node_modules/zurb-twentytwenty/js/jquery.event.move.js',
+    'node_modules/zurb-twentytwenty/js/jquery.twentytwenty.js'
   ])
     .pipe(concat('vendors.min.js'))
     .pipe(gulp.dest('build/js/')) //директория куда складывать скомпилированые файлы
@@ -177,7 +199,9 @@ gulp.task('watch', function() {
 
 //дефолтный таск, запускаемый по команде gulp
 gulp.task('default', gulp.series(
-  gulp.parallel('iconfont'), //параллельный запуск тасков
+  //gulp.parallel('iconfont'), //параллельный запуск тасков
+  gulp.parallel('svgclin'),
+  gulp.parallel('svg'),
   gulp.parallel('pug', 'sass', 'vendors', 'scripts', 'pic', 'favicon', 'og', 'svg', 'fonts'), //параллельный запуск тасков
   gulp.parallel('watch', 'serve') //параллельный запуск тасков после выполнения предыдущих
 ));

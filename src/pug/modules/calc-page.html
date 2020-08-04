@@ -1,0 +1,669 @@
+<section class="sec sec_grey">  
+  <div class="container">
+    <div class="calc-sec">
+      <div class="calc-sec__container">
+        <h1 class="sec-title">Калькулятор</h1>
+        <form method="post" action="#" class="calc-sec__main">
+          <div class="calc-sec__row">
+            <div class="calc-sec__col">
+              <select name="d" id="" class="select js-select" data-placeholder="">
+                <option></option>
+                <option>20</option>
+                <option>30</option>
+                <option>40</option>
+                <option>50</option>
+              </select>
+              <div class="select__title">Диаметр дисков</div>
+            </div>
+            <div class="calc-sec__col">
+              <input type="number" class="numb js-numb" min="1" value="4">
+              <div class="select__title">Кол-во дисков</div>
+            </div>
+          </div>
+          <fieldset class="calc-sec__fieldset">
+            <label class="calc-sec__check js-calc-label">
+              <span class="calc-sec__check-name">Покраска</span>
+              <input type="checkbox" class="js-calc-check">
+              <span class="calc-sec__check-thumbler"></span>
+            </label>
+            <div class="calc-sec-hide js-calc-hide">
+              <p class="calc-sec-hide__txt">Включено: устранение неглубоких задиров и царапин, грунтовка, покраска, финишный лак.</p>
+              <div class="js-tab-container">
+                <div class="calc-sec-hide__header">
+                  <div class="calc-sec-hide__title">Дополнительные услуги:</div>
+                  <div class="calc-sec-hide__tabs">
+                    <div class="calc-sec-hide__tab js-tab active"><img src="src/static/img/svg/well.svg" alt=""> Неразборные</div>
+                    <div class="calc-sec-hide__tab js-tab"><img src="src/static/img/svg/wells.svg" alt="">Разборные</div>
+                  </div>
+                </div>
+                <div class="calc-sec-hide__items">
+                  <div class="calc-sec-hide__item js-tab-item">
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Покраска канта:</a> 5 000 ₽</div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Покраска в два цвета:</a> 0 ₽</div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Candy:</a> 3 000 ₽</div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Покраска центральных заглушек:</a> ~500 ₽</div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="calc-sec-hide__item js-tab-item">
+                    <div class="calc-sec-hide__bar">
+                        <label class="calc-sec-hide__bar-item">
+                          <input type="radio" name="comp" checked>
+                          <span class="calc-sec-hide__bar-item-txt">2-х составные</span>
+                        </label>
+                        <label class="calc-sec-hide__bar-item">
+                          <input type="radio" name="comp">
+                          <span class="calc-sec-hide__bar-item-txt">3-х составные</span>
+                        </label>
+                    </div>
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Разбор и сбор диска:</a> 1 000 ₽</div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Покраска центра: </a> 6 000 ₽</div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Покраска центра в Candy:</a> 9 000 ₽</div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Покраска бочки (инеров):</a> 4 000 ₽</div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Покраска центральных заглушек:</a> ~500 ₽ (шт)</div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Полировка болтиков:</a> ~500 ₽ (шт)</div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Герметизация:</a> 2 000 ₽</div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Полки:</a> от 6 000 ₽</div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checrow checrow_radio">
+                      <label>
+                        <input type="radio" name="with">
+                        <span class="checrow__radio"></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Узкая:</a> 6 000 ₽</div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checrow checrow_radio">
+                      <label>
+                        <input type="radio" name="with">
+                        <span class="checrow__radio"></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Широкая:</a> 8 000 ₽</div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Покрытие лаком </a> 4 000 ₽</div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <label class="calc-sec__check js-calc-label">
+              <span class="calc-sec__check-name">Проточка/полировка</span>
+              <input type="checkbox" class="js-calc-check">
+              <span class="calc-sec__check-thumbler"></span>
+            </label>
+            <div class="calc-sec-hide js-calc-hide">
+              <div class="calc-sec-hide__item">
+                <div class="checrow">
+                  <label>
+                    <input type="checkbox">
+                    <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                  </label>
+                  <div class="checrow__txt"><a href="#">Алмазная проточка лицевой части:</a> 12 000 ₽</div>
+                  <div class="info">
+                    <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                    <div class="info__cloud info__cloud_right js-info-cloud">
+                      <div class="info__cloud-wrap">
+                        <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                        <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                        <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="checrow">
+                  <label>
+                    <input type="checkbox">
+                    <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                  </label>
+                  <div class="checrow__txt"><a href="#">Алмазная проточка канта:</a> 8 000 ₽</div>
+                  <div class="info">
+                    <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                    <div class="info__cloud info__cloud_right js-info-cloud">
+                      <div class="info__cloud-wrap">
+                        <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                        <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                        <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="checrow">
+                  <label>
+                    <input type="checkbox">
+                    <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                  </label>
+                  <div class="checrow__txt"><a href="#">Алмазная проточка полки:</a> 6 000 ₽</div>
+                  <div class="info">
+                    <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                    <div class="info__cloud info__cloud_right js-info-cloud">
+                      <div class="info__cloud-wrap">
+                        <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                        <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                        <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="checrow">
+                  <label>
+                    <input type="checkbox">
+                    <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                  </label>
+                  <div class="checrow__txt"><a href="#">Полировка / брашировка полки:</a> 6 000 ₽</div>
+                  <div class="info">
+                    <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                    <div class="info__cloud info__cloud_right js-info-cloud">
+                      <div class="info__cloud-wrap">
+                        <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                        <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                        <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="checrow">
+                  <label>
+                    <input type="checkbox">
+                    <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                  </label>
+                  <div class="checrow__txt"><a href="#">Полировка диска (голтовка):</a> 24 000 ₽</div>
+                  <div class="info">
+                    <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                    <div class="info__cloud info__cloud_right js-info-cloud">
+                      <div class="info__cloud-wrap">
+                        <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                        <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                        <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="checrow">
+                  <label>
+                    <input type="checkbox">
+                    <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                  </label>
+                  <div class="checrow__txt"><a href="#">Покрытие лаком:</a> 4 000 ₽</div>
+                  <div class="info">
+                    <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                    <div class="info__cloud info__cloud_right js-info-cloud">
+                      <div class="info__cloud-wrap">
+                        <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                        <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                        <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <label class="calc-sec__check js-calc-label">
+              <span class="calc-sec__check-name">Шиномонтаж</span>
+              <input type="checkbox" class="js-calc-check">
+              <span class="calc-sec__check-thumbler"></span>
+            </label>
+            <div class="calc-sec-hide js-calc-hide">
+              <div class="js-tab-container">
+                <div class="calc-sec-hide__header">
+                  <div class="calc-sec-hide__tabs">
+                    <div class="calc-sec-hide__tab js-tab active"><img src="src/static/img/svg/car.svg" alt=""> Седан</div>
+                    <div class="calc-sec-hide__tab js-tab"><img src="src/static/img/svg/miniven.svg" alt="">Кроссовер</div>
+                  </div>
+                </div>
+                <div class="calc-sec-hide__items">
+                  <div class="calc-sec-hide__item js-tab-item">
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Демонтаж:</a> 5 000 ₽</div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Монтаж:</a> 5 000 ₽</div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Балансировка:</a> 5 000 ₽</div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Снятие / установка:</a> 5 000 ₽</div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">RAN FLAT</a></div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Профиль меньше 45</a></div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="calc-sec-hide__item js-tab-item">
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Демонтаж:</a> 5 000 ₽</div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Монтаж:</a> 5 000 ₽</div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Балансировка:</a> 5 000 ₽</div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Снятие / установка:</a> 5 000 ₽</div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">RAN FLAT</a></div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checrow">
+                      <label>
+                        <input type="checkbox">
+                        <span class="checrow__dop"><img src="src/static/img/svg/check.svg" alt=""></span>
+                      </label>
+                      <div class="checrow__txt"><a href="#">Профиль меньше 45</a></div>
+                      <div class="info">
+                        <div class="info__btn js-info-open"><img src="src/static/img/svg/questions.svg" alt=""></div>
+                        <div class="info__cloud info__cloud_right js-info-cloud">
+                          <div class="info__cloud-wrap">
+                            <img class="info__cloud-pic" src="img/pic/serv-2.png" alt="">
+                            <p class="info__cloud-txt">Процедура повышает коррозионную стойкость</p>
+                            <button class="btn info__cloud-close js-info-close" type="button"><img src="src/static/img/svg/close.svg" alt=""></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <label class="calc-sec__check">
+              <span class="calc-sec__check-name">Ремонт дисков</span>
+              <input type="checkbox">
+              <span class="calc-sec__check-thumbler"></span>
+            </label>
+          </fieldset>
+          <div class="calc-sec__summ">
+            <div class="calc-sec__summ-val">6 000 Р</div>
+            <div class="calc-sec__summ-txt">4 диска • срок 2-4 дня • гарантия 3 года</div>
+          </div>
+          <button class="btn btn_xl btn_red calc-sec__btn" type="submit">Записаться на покраску</button>
+        </form>
+      </div>
+      <div class="calc-sec__pic">
+        <img src="img/pic/car.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>

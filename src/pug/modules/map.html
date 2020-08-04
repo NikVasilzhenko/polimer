@@ -1,0 +1,57 @@
+<div class="map" id="js-map">
+
+</div>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script>
+ymaps.ready(init);
+  var map;						
+  function init(){     
+    map = new ymaps.Map("js-map", {
+      center: [55.755814, 37.617635],
+      zoom: 10,
+      controls: []
+    });
+    map.behaviors.disable('scrollZoom');
+    placemark = new ymaps.Placemark(
+      [55.703515, 37.712533],
+      { 
+        balloonContent: 'Южнопортовая, 21с8'
+      },
+      {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/pic/baloon.png',
+        iconImageSize: [62, 85],
+        iconImageOffset: [-31, -43]
+      }
+    );
+    map.geoObjects.add(placemark);
+    
+    placemark2 = new ymaps.Placemark(
+      [55.852329, 37.605795],
+      { 
+        balloonContent: 'Сигнальный проезд, 20с2'
+      },
+      {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/pic/baloon.png',
+        iconImageSize: [62, 85],
+        iconImageOffset: [-31, -43]
+      }
+    );
+    map.geoObjects.add(placemark2);
+    
+    placemark3 = new ymaps.Placemark(
+      [55.801566, 37.559218],
+      { 
+        balloonContent: 'ул. Юннатов, 13c2'
+      },
+      {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/pic/baloon.png',
+        iconImageSize: [62, 85],
+        iconImageOffset: [-31, -43]
+      }
+    );
+    map.geoObjects.add(placemark3);
+  };    
+</script> 

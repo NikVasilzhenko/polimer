@@ -1,0 +1,80 @@
+.garanty{
+  background-color: #1B1B1B;
+  color: #fff;  
+  &__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 168px;
+  }
+  &__main{
+    width: 50%;
+    padding-right: 66px;
+    text-align: right;
+    position: relative;
+    z-index: 5;
+  }
+  &__title{
+    font-size: 26px;
+    font-weight: 400;
+    strong{
+      display: block;
+      font-size: 34px;
+      font-weight: 500;
+    }
+  }
+  &__pic{
+    flex-grow: 1;
+    height: 100%;
+    &-overlay{
+      width: 200%;
+      height: 100%;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    img{
+      max-width: unset;
+      position: absolute;
+    }
+  }
+  &__icn{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    bottom: -32px;
+    right: 160px;
+    background-color: #FF2B03;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    z-index: 3;
+    svg{
+      .c{stroke: none !important;}
+    }
+  }
+  &__book{
+    height: 100%;
+    top: 0;
+    right: 85px;
+    z-index: 2;
+  }
+  &__elipse{
+    z-index: 1;
+    width: 650px;
+    top: -50px;
+    right: 134px;
+  }
+  @media only screen and (max-width : 991px){
+    &__icn{right: 30px;}
+    &__book{right: -45px;}
+    &__elipse{right: -30px;}
+    &__main{padding-right: 30px;}
+  }
+  @media only screen and (max-width : 767px){
+    display: none;
+  }  
+}

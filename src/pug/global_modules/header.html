@@ -1,52 +1,67 @@
-<header class="header">
+<header class="header header_main">
   <div class="container">
     <div class="header__wrap">
       <div class="header__left">
         <div class="header__main">
-          <button class="btn burger" id="js-mob-menu-btn"><span></span></button>
-          <div class="header__logo-group">
-           <a href="/" class="header__logo"><img src="../../static/img/pic/logo.png" alt="Polimer Kars"></a>
-           <p class="header__txt header__slogan">Студия профессионального ремонта и&nbsp;порошковой покраски дисков</p>
-         </div>
-         <a href="tel:+74951202136" class="header__mob-tel">+7 495 120 21 36</a>
-          <ul class="header__soc">
-             <li>
-               <a href="#" target="_blank" class="header-link" title="Viber">
-                 <span class="header-link__ring"></span>
-                 <img src="../../static/img/svg/viber_white.svg" alt="">
-               </a>
-             </li>
-             <li>
-               <a href="#" target="_blank" class="header-link" title="WhatsApp">
-                 <span class="header-link__ring"></span>
-                 <img src="../../static/img/svg/whatsapp_white.svg" alt="">
-               </a>
-             </li>
-             <li>
-               <a href="#" target="_blank" class="header-link" title="Telegram">
-                 <span class="header-link__ring"></span>
-                 <img src="../../static/img/svg/telegram_white.svg" alt="">
-               </a>
-             </li>
-             <li>
-               <a href="#" target="_blank" class="header-link" title="Instagram">
-                 <span class="header-link__ring"></span>
-                 <img src="../../static/img/svg/instagram_white.svg" alt="">
-               </a>
-             </li>
-           </ul>
-           <nav class="header-nav">
+          <div class="header__top">
+            <button class="btn burger" id="js-mob-menu-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="header__logo-group">
+              <a href="/" class="header__logo"><img src="img/pic/logo.png" alt="Polimer Kars"></a>
+              <p class="header__slogan">Студия профессионального ремонта и&nbsp;порошковой покраски дисков</p>
+             </div>
+            <ul class="header__soc">
+                 <li>
+                   <a href="#" target="_blank" class="header-link" title="Viber">
+                     <span class="header-link__ring">
+                      <span class="header-link__inner"></span>
+                     </span>
+                     <img src="src/static/img/svg/viber_white.svg" alt="">
+                   </a>
+                 </li>
+                 <li>
+                   <a href="#" target="_blank" class="header-link" title="WhatsApp">
+                     <span class="header-link__ring">
+                      <span class="header-link__inner"></span>
+                     </span>
+                     <img src="src/static/img/svg/whatsapp_white.svg" alt="">
+                   </a>
+                 </li>
+                 <li>
+                   <a href="#" target="_blank" class="header-link" title="Telegram">
+                     <span class="header-link__ring">
+                      <span class="header-link__inner"></span>
+                     </span>
+                     <img src="src/static/img/svg/telegram_white.svg" alt="">
+                   </a>
+                 </li>
+                 <li>
+                   <a href="#" target="_blank" class="header-link" title="Telegram">
+                     <span class="header-link__ring">
+                      <span class="header-link__inner"></span>
+                     </span>
+                     <img src="src/static/img/svg/instagram_white.svg" alt="">
+                   </a>
+                 </li>
+             </ul>
+          </div>
+          <nav class="header-nav">
              <ul>
                <li>
                  <a href="#">Услуги и цены</a>
-                 <ul class="header-nav__sub">
-                   <li><a href="#">Покраска дисков</a></li>
-                   <li><a href="#">Ремонт дисков</a></li>
-                   <li><a href="#">Шиномонтаж</a></li>
-                   <li><a href="#">Алмазная шлифовка дисков</a></li>
-                   <li><a href="#">Покраска суппортов</a></li>
-                   <li><a href="#">Ещё…</a></li>
-                 </ul>
+                 <div class="header-nav__sub">
+                   <ul>
+                     <li><a href="#">Покраска дисков</a></li>
+                     <li><a href="#">Ремонт дисков</a></li>
+                     <li><a href="#">Шиномонтаж</a></li>
+                     <li><a href="#">Алмазная шлифовка дисков</a></li>
+                     <li><a href="#">Покраска суппортов</a></li>
+                     <li><a href="#">Ещё…</a></li>
+                   </ul>
+                 </div>
                </li>
                <li><a href="#">Калькулятор</a></li>
                <li><a href="#">Галлерея</a></li>
@@ -55,17 +70,17 @@
                <li><a href="#">Подарочные сертификаты</a></li>
              </ul>
            </nav>           
-         </div>
+        </div>
         <div class="header__address">
-          <div class="header-link">
-            <span class="header-link__ring"></span>
-            <img src="../../static/img/svg/map_white.svg" alt="">
-          </div>
-          <div class="header__address-main">
-            <p class="header__txt">
-              <span>Москва</span>ул. Южнопортовая, 21c8 <br>Сигнальный проезд, 20с2 <br>ул. Юннатов, 13c2
-            </p>            
-          </div>
+          <a href="#" class="header-link">
+            <span class="header-link__ring">
+              <span class="header-link__inner"></span>
+            </span>
+            <img src="src/static/img/svg/map_white.svg" alt="">
+          </a>
+          <p class="header__address-txt">
+            <span>Москва</span>ул. Южнопортовая, 21c8 <br>Сигнальный проезд, 20с2 <br>ул. Юннатов, 13c2
+          </p>
         </div>
       </div>
       <div class="header__right">
@@ -76,54 +91,59 @@
   </div>
 </header>
 <div class="mob-menu" id="js-mob-menu">
-  <nav class="header-nav">
-    <ul>
+  <div class="mob-menu__wrap">
+    <nav class="header-nav">
+      <ul>
+        <li>
+          <a href="#">Услуги и цены</a>
+          <span class="mob-show header-nav__toggler js-sub-menu-open">
+            <img src="src/static/img/svg/chevrone-right.svg" alt="">
+          </span>                   
+          <div class="header-nav__sub js-sub-menu">
+            <button class="btn mob-show header-nav__back js-sub-menu-close">
+              <img src="src/static/img/svg/chevrone-left.svg" alt="">
+              Услуги и цены
+            </button>
+            <ul>
+              <li><a href="#">Покраска дисков</a></li>
+              <li><a href="#">Ремонт дисков</a></li>
+              <li><a href="#">Шиномонтаж</a></li>
+              <li><a href="#">Алмазная шлифовка дисков</a></li>
+              <li><a href="#">Покраска суппортов</a></li>
+              <li><a href="#">Ещё…</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Калькулятор</a></li>
+        <li><a href="#">Галлерея</a></li>
+        <li><a href="#">Отзывы</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Подарочные сертификаты</a></li>
+      </ul>
+    </nav>
+    <ul class="header__soc">
       <li>
-        <a href="#">Услуги и цены</a>
-        <span class="mob-show header-nav__toggler js-accordion-btn"></span>                   
-        <ul class="header-nav__sub">
-          <li><button class="btn mob-show header-nav__back js-header-nav-back">Услуги и цены</button></li>
-          <li><a href="#">Покраска дисков</a></li>
-          <li><a href="#">Ремонт дисков</a></li>
-          <li><a href="#">Шиномонтаж</a></li>
-          <li><a href="#">Алмазная шлифовка дисков</a></li>
-          <li><a href="#">Покраска суппортов</a></li>
-          <li><a href="#">Ещё…</a></li>
-        </ul>
+        <a href="#" target="_blank" class="header-link" title="Viber">
+          <img src="src/static/img/svg/viber_white.svg" alt="">
+        </a>
       </li>
-      <li><a href="#">Калькулятор</a></li>
-      <li><a href="#">Галлерея</a></li>
-      <li><a href="#">Отзывы</a></li>
-      <li><a href="#">Контакты</a></li>
-      <li><a href="#">Подарочные сертификаты</a></li>
+      <li>
+        <a href="#" target="_blank" class="header-link" title="WhatsApp">
+          <img src="src/static/img/svg/whatsapp_white.svg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#" target="_blank" class="header-link" title="Telegram">
+          <img src="src/static/img/svg/telegram_white.svg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#" target="_blank" class="header-link" title="Instagram">
+          <img src="src/static/img/svg/instagram_white.svg" alt="">
+        </a>
+      </li>
     </ul>
-  </nav>
-  <ul class="header__soc">
-    <li>
-      <a href="#" target="_blank" class="header-link" title="Viber">
-        <span class="header-link__ring"></span>
-        <img src="../../static/img/svg/viber_white.svg" alt="">
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_blank" class="header-link" title="WhatsApp">
-        <span class="header-link__ring"></span>
-        <img src="../../static/img/svg/whatsapp_white.svg" alt="">
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_blank" class="header-link" title="Telegram">
-        <span class="header-link__ring"></span>
-        <img src="../../static/img/svg/telegram_white.svg" alt="">
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_blank" class="header-link" title="Instagram">
-        <span class="header-link__ring"></span>
-        <img src="../../static/img/svg/instagram_white.svg" alt="">
-      </a>
-    </li>
-  </ul>
-  <a href="tel:+74951202136" class="header__tel">+7 495 120 21 36</a>
-  <p class="header__txt">10:00 - 20:00 Без&nbsp;выходных</p>
+    <a href="tel:+74951202136" class="header__tel">+7 495 120 21 36</a>
+    <p class="header__txt">10:00 - 20:00 Без&nbsp;выходных</p>
+  </div>
 </div>
