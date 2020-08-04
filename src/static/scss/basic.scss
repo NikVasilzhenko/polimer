@@ -572,7 +572,7 @@ svg{
     &:hover{background-color: #F5F6F7;}
   }
   input{
-    display: none;
+    &[type="checkbox"]{display: none;}
     &:checked + .checrow__dop{
       border-color: #FF2B03;
       background-color: #FF2B03;
@@ -580,6 +580,27 @@ svg{
     }
     &:checked + .checrow__radio{
       border: 8px solid #FF2B03;
+    }
+    &[type="text"]{
+      display: inline-block;
+      width: 60px;
+      border: 1px solid #cecece;
+      border-radius: 4px;
+      height: 24px;
+      padding: 0 12px;
+      margin-left: 10px;
+      text-align: center;
+      font-size: 14px;
+      &::-webkit-input-placeholder{opacity: 1; color: #9c9c9c;}
+      &::-moz-placeholder{opacity: 1; color: #9c9c9c;}
+      &:-moz-placeholder{opacity: 1; color: #9c9c9c;}
+      &:-ms-input-placeholder{opacity: 1; color: #9c9c9c;}
+      &:placeholder{opacity: 1;color: #9c9c9c;}
+      @media only screen and (max-width : 767px){
+        width: 40px;
+        padding: 0;
+        margin-left: 6px;
+      }
     }
   }
   &__txt{

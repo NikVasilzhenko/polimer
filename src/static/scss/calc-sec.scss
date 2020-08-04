@@ -84,7 +84,7 @@
       }
     }
     input{
-      display: none;
+      display: none;   
       &:checked + .calc-sec__check-thumbler{
         background-color: #07AD34;
         &::after{left: 26px;}
